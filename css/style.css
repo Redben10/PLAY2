@@ -14,10 +14,10 @@
     --font: 'Karla', sans-serif;
     --firstName: 'John';
     --lastName: 'Doe';
-    --buttonBgColor: #292929;
-    --buttonHoverColor: #00bb00;
-    --buttonBorderColor: #353535;
-    --buttonBoxShadowColor: rgba(0, 0, 0, 0.5);
+    --buttonBgColor: #4CAF50;
+    --buttonHoverColor: #45a049;
+    --buttonBorderColor: #ccc;
+    --buttonBoxShadowColor: rgba(0, 0, 0, 0.2);
     --buttonTextColor: #fff;
 }
 
@@ -32,7 +32,7 @@ html {
 }
 
 .badge {
-    background-color: BlueViolet;
+    background-color: #2196F3;
     color: white;
     padding: 4px 8px;
     text-align: center;
