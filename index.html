@@ -1,249 +1,249 @@
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-        &lt;meta charset=&quot;UTF-8&quot;&gt;
-        &lt;title&gt;Red&#39;s Games v2 9&lt;/title&gt;
-      &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;./icons/favicon.png&quot;&gt;
-        &lt;meta property=&quot;og:title&quot; content=&quot;Play red&#39;s games online&quot; /&gt;
-        &lt;meta property=&quot;og:description&quot; content=&quot;All of the most popular games playable in your browser! With games such as Subway Surfers,Stick slasher, 1v1.lol, Retrobowl, Slope, and many more fun games!&quot; /&gt;
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
-        &lt;script src=&quot;https://kit.fontawesome.com/d0c5025972.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-        &lt;meta name=&quot;theme-color&quot; content=&quot;var(--bgColor)&quot;&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-            &lt;!--Page Content Below--&gt;
-        &lt;img id=&quot;userPhoto&quot; class=&quot;animated rubberBand fast&quot; src=&quot;icons/logo.png&quot; alt=&quot;Undone&quot;&gt;
-        &lt;h1 class=&quot;animated jello game_title&quot;&gt;Red&#39;s Games&lt;/h1&gt;
-        &lt;div id=&quot;links&quot; class=&quot;animated fadeInLeft delay-1s games&quot;&gt;
-            &lt;div class=&quot;game_title&quot;&gt;&lt;input placeholder=&quot;Search&quot; id=&quot;search&quot; class=&quot;search&quot; onkeyup=&quot;search_it()&quot; type=&quot;search&quot;&gt;&lt;select id=&quot;tags&quot; class=&quot;button&quot; onclick=&quot;search_it()&quot;&gt;&lt;option value=&quot;all&quot;&gt;All&lt;/option&gt;&lt;option value=&quot;pop&quot;&gt;Popular&lt;/option&gt;&lt;option value=&quot;two&quot;&gt;Two Player&lt;/option&gt;&lt;option value=&quot;stream&quot;&gt;Streaming&lt;/option&gt;&lt;option value=&quot;bad&quot;&gt;Bad Games&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;
-            &lt;h2 class=&quot;animated jello game_title&quot;&gt;All Games:&lt;/h2&gt;
-            &lt;a id=&quot;1 (2048 game)&quot; class=&quot;link&quot; href=&quot;./play/1/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/one.webp&quot; alt=&quot;1 (2048 game)&quot;&gt;&lt;b&gt;1 (2048 game)&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;100 Player Pong&quot; class=&quot;glink&quot; href=&quot;./play/100-player-pong/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/100pong.webp&quot;&gt;&lt;b&gt;100 Player Pong&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;10 Minutes Till Dawn&quot; class=&quot;link&quot; href=&quot;./play/10-minutes-till-dawn/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/10m.webp&quot;&gt;&lt;b&gt;10 Minutes Till Dawn&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;burrito bison&quot; class=&quot;link&quot; href=&quot;./play/burrito bison/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/birrito.jpeg&quot;&gt;&lt;b&gt;burrito bison&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;stickslasher&quot; class=&quot;link&quot; href=&quot;./play/stickslasher/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/Stickslaher.jpeg&quot;&gt;&lt;b&gt;Stick Slasher&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;spotify&quot; class=&quot;link stream&quot; href=&quot;./play/spotify/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/spotify.png&quot;&gt;&lt;b&gt;spotify&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;1v1.lol&quot; class=&quot;link pop&quot; href=&quot;./play/1v1/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/1v1.webp&quot;&gt;&lt;b&gt;1v1.lol&lt;/b&gt;  &lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-star&quot;&gt;&lt;/i&gt; POPULAR&lt;/span&gt;&lt;span class=&quot;badge&quot;&gt;&lt;/a&gt;
-            &lt;a id=&quot;1v1.space&quot; class=&quot;link&quot; href=&quot;./play/1v1space/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/1v1space.webp&quot;&gt;&lt;b&gt;1v1.space&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;2048&quot; class=&quot;link&quot; href=&quot;./play/2048/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/2048.webp&quot;&gt;&lt;b&gt;2048&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;2048 Multitask&quot; class=&quot;link&quot; href=&quot;./play/2048-multitask/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/multit.webp&quot;&gt;&lt;b&gt;2048 Multitask&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;9007199254740992&quot; class=&quot;link&quot; href=&quot;./play/9007199254740992/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/900.webp&quot;&gt;&lt;b&gt;9007199254740992 (2048 game)&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Achievement Unlocked&quot; class=&quot;link&quot; href=&quot;./play/achievementunlocked/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/ache.webp&quot;&gt;&lt;b&gt;Achievement Unlocked&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;A Dark Room&quot; class=&quot;link&quot; href=&quot;./play/adarkroom/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/adarkroom.webp&quot;&gt;&lt;b&gt;A Dark Room&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Ages of Conflict&quot; class=&quot;link&quot; href=&quot;./play/ages-of-conflict/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/ages-of-conflict.webp&quot;&gt;&lt;b&gt;Ages of Conflict&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Alien Hominid&quot; class=&quot;link&quot; href=&quot;./play/alienhominid/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/alienhominid.webp&quot;&gt;&lt;b&gt;Alien Hominid&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Amidst the Clouds&quot; class=&quot;link&quot; href=&quot;./play/amidst-the-clouds/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/amidst-the-clouds.webp&quot;&gt;&lt;b&gt;Amidst the Clouds&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Avalanche&quot; class=&quot;link&quot; href=&quot;./play/avalanche/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/avalanche.webp&quot;&gt;&lt;b&gt;Avalanche&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Backrooms&quot; class=&quot;link&quot; href=&quot;./play/backrooms/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/backrooms.webp&quot;&gt;&lt;b&gt;Backrooms&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Bad Ice Cream&quot; class=&quot;link&quot; href=&quot;./play/bad-ice-cream/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/bad-ice-cream.webp&quot;&gt;&lt;b&gt;Bad Ice Cream&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Bad Ice Cream 2&quot; class=&quot;link&quot; href=&quot;./play/bad-ice-cream-2/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/bad-ice-cream-2.webp&quot;&gt;&lt;b&gt;Bad Ice Cream 2&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Bad Ice Cream 3&quot; class=&quot;link&quot; href=&quot;./play/bad-ice-cream-3/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/bad-ice-cream-3.webp&quot;&gt;&lt;b&gt;Bad Ice Cream 3&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Baldi&#39;s Basics&quot; class=&quot;link&quot; href=&quot;./play/baldis-basics/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/baldis-basics.webp&quot;&gt;&lt;b&gt;Baldi&#39;s Basics&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Ball Hop&quot; class=&quot;link&quot; href=&quot;./play/ball-hop/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/ballhop.webp&quot;&gt;&lt;b&gt;Ball Hop&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Ballistic Chickens&quot; class=&quot;link&quot; href=&quot;./play/ballistic-chickens/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/ballistic-chickens.webp&quot;&gt;&lt;b&gt;Ballistic Chickens&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Basketball Stars&quot; class=&quot;link&quot; href=&quot;./play/basketball-stars/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/BAS.webp&quot;&gt;&lt;b&gt;Basketball Stars&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Big Tower Tiny Square&quot; class=&quot;link&quot; href=&quot;./play/big-tower-tiny-square/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/btts.webp&quot;&gt;&lt;b&gt;Big Tower Tiny Square&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Biters.io&quot; class=&quot;link&quot; href=&quot;./play/biters-io/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/biters.webp&quot;&gt;&lt;b&gt;Biters.io&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Bitlife BitLife&quot; class=&quot;link&quot; href=&quot;./play/bitlife/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/bitlife.webp&quot;&gt;&lt;b&gt;Bitlife&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Blocky Tower&quot; class=&quot;link&quot; href=&quot;./play/blocky-tower/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/blocky.webp&quot;&gt;&lt;b&gt;Blocky Tower&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Bloons TD &quot; class=&quot;link&quot; href=&quot;./play/bloonstd/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/bloonstd.webp&quot;&gt;&lt;b&gt;Bloons TD&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Bloons TD 2&quot; class=&quot;link&quot; href=&quot;./play/bloonstd2/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/bloonstd2.webp&quot;&gt;&lt;b&gt;Bloons TD 2&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Bloons TD 4&quot; class=&quot;link&quot; href=&quot;./play/bloonstd4/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/bloonstd4.webp&quot;&gt;&lt;b&gt;Bloons TD 4&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Bloxorz&quot; class=&quot;link&quot; href=&quot;./play/bloxorz/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/bloxorz.webp&quot;&gt;&lt;b&gt;Bloxorz&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Bouncy Basketball&lt;&quot; class=&quot;link&quot; href=&quot;./play/bouncybasketball/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/basketball.webp&quot;&gt;&lt;b&gt;Bouncy Basketball&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Boxing Physics&quot; class=&quot;link two&quot; href=&quot;./play/boxing-physics/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/box.webp&quot;&gt;&lt;b&gt;Boxing Physics&lt;/b&gt;&lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-user&quot;&gt;&lt;/i&gt; 2 Player&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;Breaklock&quot; class=&quot;link&quot; href=&quot;./play/breaklock/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/breaklock.webp&quot;&gt;&lt;b&gt;Breaklock&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Breakout&quot; class=&quot;link&quot; href=&quot;./play/breakout/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/breakout.webp&quot;&gt;&lt;b&gt;Breakout&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Chrome Dino&quot; class=&quot;link&quot; href=&quot;./play/chrome-dino/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/chrom.webp&quot;&gt;&lt;b&gt;Chrome Dino&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Circlo&quot; class=&quot;link&quot; href=&quot;./play/circlo/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/circlo.webp&quot;&gt;&lt;b&gt;Circlo&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Cluster Rush&quot; class=&quot;link&quot; href=&quot;./play/cluster-rush/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/cluster.webp&quot;&gt;&lt;b&gt;Cluster Rush&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Connect 3&quot; class=&quot;link&quot; href=&quot;./play/connect3/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/con3.webp&quot;&gt;&lt;b&gt;Connect 3&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Cookie Clicker&quot; class=&quot;link&quot; href=&quot;./play/cookie/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/cookie.webp&quot;&gt;&lt;b&gt;Cookie Clicker&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Core Ball&quot; class=&quot;link&quot; href=&quot;./play/core-ball/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/coreball.webp&quot;&gt;&lt;b&gt;Core Ball&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Crossyroad&quot; class=&quot;link pop&quot; href=&quot;./play/crossyroad/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/crossyroad.webp&quot;&gt;&lt;b&gt;Crossyroad&lt;/b&gt;  &lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-star&quot;&gt;&lt;/i&gt; POPULAR&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;CSGO-Clicker&quot; class=&quot;link&quot; href=&quot;./play/csgo-clicker/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/CSGO.webp&quot;&gt;&lt;b&gt;CSGO-Clicker&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Cupcakes (2048 game)&quot; class=&quot;link pop&quot; href=&quot;./play/cupcakes/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/cupcakes.webp&quot;&gt;&lt;b&gt;Cupcakes (2048 game)&lt;/b&gt;  &lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-star&quot;&gt;&lt;/i&gt; POPULAR&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;Cut The Rope&quot; class=&quot;link&quot; href=&quot;./play/cuttherope/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/ctr.webp&quot;&gt;&lt;b&gt;Cut The Rope&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Cyber City Driver&quot; class=&quot;link two&quot; href=&quot;./play/cyber-city-driver/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/cyber.webp&quot;&gt;&lt;b&gt;Cyber City Driver&lt;/b&gt;&lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-user&quot;&gt;&lt;/i&gt; 2 Player&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;Disc US&quot; class=&quot;link two&quot; href=&quot;./play/discus/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/sus.webp&quot;&gt;&lt;b&gt;Disc US&lt;/b&gt;&lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-user&quot;&gt;&lt;/i&gt; 2 Player&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;Doge miner&quot; class=&quot;link&quot; href=&quot;./play/dogeminer/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/Dogecoin.webp&quot;&gt;&lt;b&gt;Doge miner&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Doodle Jump&quot; class=&quot;link&quot; href=&quot;./play/doodlejump/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/doodle.webp&quot;&gt;&lt;b&gt;Doodle Jump&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Drift City&quot; class=&quot;link&quot; href=&quot;./play/drift-city/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/driftc.webp&quot;&gt;&lt;b&gt;Drift City&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;DriftKing.io&quot; class=&quot;link&quot; href=&quot;./play/driftking/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/driftking.webp&quot;&gt;&lt;b&gt;DriftKing.io&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Ducklife 1&quot; class=&quot;link&quot; href=&quot;./play/ducklife1/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/ducklife.webp&quot;&gt;&lt;b&gt;Ducklife 1&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Ducklife 2&quot; class=&quot;link&quot; href=&quot;./play/ducklife2/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/ducklife2.webp&quot;&gt;&lt;b&gt;Ducklife 2&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Ducklife 3&quot; class=&quot;link&quot; href=&quot;./play/ducklife3/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/ducklife3.webp&quot;&gt;&lt;b&gt;Ducklife 3&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Ducklife 4&quot; class=&quot;link&quot; href=&quot;./play/ducklife4/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/ducklife4.webp&quot;&gt;&lt;b&gt;Ducklife 4&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Dune&quot; class=&quot;link&quot; href=&quot;./play/dune/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/dune.webp&quot;&gt;&lt;b&gt;Dune&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Dunkers Fight&quot; class=&quot;link two&quot; href=&quot;./play/dunkers-fight/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/dunk.webp&quot;&gt;&lt;b&gt;Dunkers Fight&lt;/b&gt;&lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-user&quot;&gt;&lt;/i&gt; 2 Player&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;Eat.io&quot; class=&quot;link&quot; href=&quot;./play/eatio/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/eatio.webp&quot;&gt;&lt;b&gt;Eat.io&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Edge Surf&quot; class=&quot;link&quot; href=&quot;./play/edge-surf/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/edge-surf.webp&quot;&gt;&lt;b&gt;Edge Surf&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Edge Not Found&quot; class=&quot;link&quot; href=&quot;./play/edgenotfound/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/edgenotfound.webp&quot;&gt;&lt;b&gt;Edge Not Found&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Eel Slap&quot; class=&quot;link&quot; href=&quot;./play/eel-slap/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/eel-slap.webp&quot;&gt;&lt;b&gt;Eel Slap&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Eggy Car&quot; class=&quot;link&quot; href=&quot;./play/eggy-car/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/eggy-car.webp&quot;&gt;&lt;b&gt;Eggy Car&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Elastic Man&quot; class=&quot;link&quot; href=&quot;./play/elasticman/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/elasticman.webp&quot;&gt;&lt;b&gt;Elastic Man&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Endless War 3&quot; class=&quot;link&quot; href=&quot;./play/endlesswar3/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/endlesswar3.webp&quot;&gt;&lt;b&gt;Endless War 3&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Excaping The Prison&quot; class=&quot;link&quot; href=&quot;./play/excapingtheprison/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/excapingtheprison.webp&quot;&gt;&lt;b&gt;Excaping The Prison&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Evil Glitch&quot; class=&quot;link&quot; href=&quot;./play/evil-glitch/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/evil-glitch.webp&quot;&gt;&lt;b&gt;Evil Glitch&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Evolution&quot; class=&quot;link&quot; href=&quot;./play/evolution/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/evolution.webp&quot;&gt;&lt;b&gt;Evolution&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Exo&quot; class=&quot;link&quot; href=&quot;./play/exo/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/exo.webp&quot;&gt;&lt;b&gt;Exo&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Fall Boys&quot; class=&quot;link two&quot; href=&quot;./play/fallboys/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/fall-boys.webp&quot;&gt;&lt;b&gt;Fall Boys&lt;/b&gt;&lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-user&quot;&gt;&lt;/i&gt; 2 Player&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;Ferge&quot; class=&quot;link two&quot; href=&quot;./play/ferge/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/ferge.webp&quot;&gt;&lt;b&gt;Ferge.io&lt;/b&gt;&lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-user&quot;&gt;&lt;/i&gt; 2 Player&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;Flappy Bird&quot; class=&quot;link&quot; href=&quot;./play/flappy/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/flappy.webp&quot;&gt;&lt;b&gt;Flappy Bird&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;FlipHero.io&quot; class=&quot;link&quot; href=&quot;./play/fliphero/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/fliphero.webp&quot;&gt;&lt;b&gt;FlipHero.io&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;FNAF 1&quot; class=&quot;link&quot; href=&quot;./play/fnaf/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/fnaf.webp&quot;&gt;&lt;b&gt;FNAF 1&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;FNAF 2&quot; class=&quot;link&quot; href=&quot;./play/fnaf2/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/fnaf.webp&quot;&gt;&lt;b&gt;FNAF 2&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;FNAF 3&quot; class=&quot;link&quot; href=&quot;./play/fnaf3/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/fnaf.webp&quot;&gt;&lt;b&gt;FNAF 3&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;FNAF 4&quot; class=&quot;link&quot; href=&quot;./play/fnaf4/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/fnaf.webp&quot;&gt;&lt;b&gt;FNAF 4&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Friday Night Funkin&quot; class=&quot;link&quot; href=&quot;./play/fridaynightfunkin/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/fridaynightfunkin.webp&quot;&gt;&lt;b&gt;Friday Night Funkin&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Fruit Ninja&quot; class=&quot;link&quot; href=&quot;./play/fruitninja/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/fruitninja.webp&quot;&gt;&lt;b&gt;Fruit Ninja&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Funny Shooter 2&quot; class=&quot;link&quot; href=&quot;./play/funnyshooter/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/funnyshooter.webp&quot;&gt;&lt;b&gt;Funny Shooter&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Geometrydash&quot; class=&quot;link&quot; href=&quot;./play/geometrydash/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/geodash.webp&quot;&gt;&lt;b&gt;Geometrydash&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Good Night&quot; class=&quot;link&quot; href=&quot;./play/goodnight/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/gn.webp&quot;&gt;&lt;b&gt;Good Night&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Hextris&quot; class=&quot;link&quot; href=&quot;./play/hextris/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/hextrt.webp&quot;&gt;&lt;b&gt;Hextris&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Idle Breakout&quot; class=&quot;link&quot; href=&quot;./play/idle-breakout/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/idlebreakout.webp&quot;&gt;&lt;b&gt;Idle Breakout&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Idle Shark&quot; class=&quot;link&quot; href=&quot;./play/idle-shark/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/sharkgame.webp&quot;&gt;&lt;b&gt;Idle Shark&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Impossible Quiz&quot; class=&quot;link&quot; href=&quot;./play/impossiblequiz/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/impossiblequiz.webp&quot;&gt;&lt;b&gt;Impossible Quiz&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Interactive Buddy&quot; class=&quot;link&quot; href=&quot;./play/interactivebuddy/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/interactivebuddy.webp&quot;&gt;&lt;b&gt;Interactive Buddy&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Jetpack Joyride&quot; class=&quot;link&quot; href=&quot;./play/jetpack-joyride/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/jetpack-joyride.webp&quot;&gt;&lt;b&gt;Jetpack Joyride&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Just Fall&quot; class=&quot;link&quot; href=&quot;./play/just-fall/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/just-fall.webp&quot;&gt;&lt;b&gt;Just Fall&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Just One Boss&quot; class=&quot;link&quot; href=&quot;./play/just-one-boss/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/just-one-boss.webp&quot;&gt;&lt;b&gt;Just One Boss&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Kitchen Gun Game&quot; class=&quot;link&quot; href=&quot;./play/kitchen-gun-game/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/kitchen-gun-game.webp&quot;&gt;&lt;b&gt;Kitchen Gun Game&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Kitten Cannon&quot; class=&quot;link&quot; href=&quot;./play/kittencannon/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/kittencannon.webp&quot;&gt;&lt;b&gt;Kitten Cannon&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Krunker&quot; class=&quot;link&quot; href=&quot;./play/krunker/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/krunker.webp&quot;&gt;&lt;b&gt;Krunker&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;learntofly&quot; class=&quot;link&quot; href=&quot;./play/learntofly/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/learntofly.webp&quot;&gt;&lt;b&gt;learntofly&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;learntofly2&quot; class=&quot;link&quot; href=&quot;./play/learntofly2/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/learntofly2.webp&quot;&gt;&lt;b&gt;learntofly 2&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Mario&quot; class=&quot;link&quot; href=&quot;./play/mario/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/mario.webp&quot;&gt;&lt;b&gt;Mario&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Minecraft&quot; class=&quot;link pop&quot; href=&quot;./play/minecraft/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/minecraft.webp&quot;&gt;&lt;b&gt;Minecraft&lt;/b&gt;&lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-star&quot;&gt;&lt;/i&gt; POPULAR&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;Minecraft JS&quot; class=&quot;link&quot; href=&quot;./play/minecraft-js/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/minecraft.webp&quot;&gt;&lt;b&gt;Minecraft JS&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;motox3m&quot; class=&quot;link&quot; href=&quot;./play/motox3m/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/motox3m.webp&quot;&gt;&lt;b&gt;Motox3m&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;motox3m Pool Party&quot; class=&quot;link&quot; href=&quot;./play/motox3m-pool/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/motox3m-pool.webp&quot;&gt;&lt;b&gt;Motox3m Pool Party&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;motox3m Spooky Land&quot; class=&quot;link&quot; href=&quot;./play/motox3m-spooky/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/moto-spook.webp&quot;&gt;&lt;b&gt;Motox3m Spooky Land&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;motox3m Winter&quot; class=&quot;link&quot; href=&quot;./play/motox3m-winter/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/motox3m-winter.webp&quot;&gt;&lt;b&gt;Motox3m Winter&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;motox3m2&quot; class=&quot;link&quot; href=&quot;./play/motox3m2/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/motox3m2.webp&quot;&gt;&lt;b&gt;Motox3m2&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Multiplayer Pong&quot; class=&quot;link two&quot; href=&quot;./play/multiplayer-pong/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/pong.webp&quot;&gt;&lt;b&gt;Multiplayer Pong&lt;/b&gt;&lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-user&quot;&gt;&lt;/i&gt; 2 Player&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;Pacman&quot; class=&quot;link&quot; href=&quot;./play/pacman/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/pacman.webp&quot;&gt;&lt;b&gt;Pacman&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Paper.io 2&quot; class=&quot;link&quot; href=&quot;./play/paperio/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/paperio.webp&quot;&gt;&lt;b&gt;Paper.io 2&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Papery Planes&quot; class=&quot;link&quot; href=&quot;./play/papery-planes/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/paperplane.webp&quot;&gt;&lt;b&gt;Papery Planes&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Particle Clicker&quot; class=&quot;link&quot; href=&quot;./play/particle-clicker/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/parclick.webp&quot;&gt;&lt;b&gt;Particle Clicker&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Picky Package&quot; class=&quot;link&quot; href=&quot;./play/picky-package/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/pickyback.webp&quot;&gt;&lt;b&gt;Picky Package&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Pokemon Fire Red&quot; class=&quot;link&quot; href=&quot;./play/pokemonfirered/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/PokemonFireRed.webp&quot;&gt;&lt;b&gt;Pokemon Fire Red&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Pokey Stick&quot; class=&quot;link&quot; href=&quot;./play/pokey-stick/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/pogy.webp&quot;&gt;&lt;b&gt;Pokey Stick&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Pong&quot; class=&quot;link&quot; href=&quot;./play/pong/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/pong.webp&quot;&gt;&lt;b&gt;Pong&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;PushBack&quot; class=&quot;link&quot; href=&quot;./play/pushback/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/pushback.webp&quot;&gt;&lt;b&gt;PushBack&lt;/b&gt;&lt;/a&gt;
-          &lt;a id=&quot;Browser Quest&quot; class=&quot;link&quot; href=&quot;./play/browserquest/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/BrowserQuest.webp&quot;&gt;&lt;b&gt;Browser Quest&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Racer&quot; class=&quot;link&quot; href=&quot;./play/racer/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/Racer.webp&quot;&gt;&lt;b&gt;Racer&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Radius Raid&quot; class=&quot;link&quot; href=&quot;./play/radiusraid/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/raid.webp&quot;&gt;&lt;b&gt;Radius Raid&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Restaurant Rush&quot; class=&quot;link&quot; href=&quot;./play/restaurant-rush/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/resr.webp&quot;&gt;&lt;b&gt;Restaurant Rush&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Retro Bowl&quot; class=&quot;link&quot; href=&quot;./play/retrobowl/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/retrobowl.webp&quot;&gt;&lt;b&gt;Retro Bowl&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Retro Haunt&quot; class=&quot;link&quot; href=&quot;./play/retrohaunt/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/retrohaunt.webp&quot;&gt;&lt;b&gt;Retro Haunt&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Rooftop Snipers 2&quot; class=&quot;link&quot; href=&quot;./play/rooftop-snipers-2/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/Rooftop-Snipers.webp&quot;&gt;&lt;b&gt;Rooftop Snipers 2&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Run 3&quot; class=&quot;link&quot; href=&quot;./play/run3/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/run3.webp&quot;&gt;&lt;b&gt;Run 3&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Sans&quot; class=&quot;link pop&quot; href=&quot;./play/sans/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/sans.webp&quot;&gt;&lt;b&gt;Sans&lt;/b&gt;  &lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-star&quot;&gt;&lt;/i&gt; POPULAR&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;Slope&quot; class=&quot;link pop&quot; href=&quot;./play/slope/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/slope.webp&quot;&gt;&lt;b&gt;Slope&lt;/b&gt;  &lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-star&quot;&gt;&lt;/i&gt; POPULAR&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;Space Invaders&quot; class=&quot;link&quot; href=&quot;./play/spaceinvaders/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/spaceinv.webp&quot;&gt;&lt;b&gt;Space Invaders&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Stack&quot; class=&quot;link&quot; href=&quot;./play/stack/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/stack.webp&quot;&gt;&lt;b&gt;Stack&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Stack Ball&quot; class=&quot;link&quot; href=&quot;./play/stack-ball/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/stackball.webp&quot;&gt;&lt;b&gt;Stack Ball&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Station Meltdown&quot; class=&quot;link&quot; href=&quot;./play/station-meltdown/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/meltdown.webp&quot;&gt;&lt;b&gt;Station Meltdown&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Steal This Election&quot; class=&quot;link two&quot; href=&quot;./play/steal-this-election/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/elec.webp&quot;&gt;&lt;b&gt;Steal This Election&lt;/b&gt;&lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-user&quot;&gt;&lt;/i&gt; 2 Player&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;Subway Surfers: Beijing&quot; class=&quot;link&quot; href=&quot;./play/subwaysurfersbeijing/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/subwaysurferbeijing.webp&quot;&gt;&lt;b&gt;Subway Surfers: Beijing&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Subway Surfers: Houston&quot; class=&quot;link&quot; href=&quot;./play/subwaysurfershouston/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/subwaysurfershouston.webp&quot;&gt;&lt;b&gt;Subway Surfers: Houston&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Subway Surfers: Monaco&quot; class=&quot;link&quot; href=&quot;./play/subwaysurfersmonaco/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/SubwayMonaco.webp&quot;&gt;&lt;b&gt;Subway Surfers: Monaco&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Subway Surfers: San Francisco&quot; class=&quot;link pop&quot; href=&quot;./play/subwaysurferssanfrancisco/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/subsan.webp&quot;&gt;&lt;b&gt;Subway Surfers: San Francisco&lt;/b&gt;  &lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-star&quot;&gt;&lt;/i&gt; POPULAR&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;SuperHot&quot; class=&quot;link pop&quot; href=&quot;./play/superhot/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/superhot.webp&quot;&gt;&lt;b&gt;SuperHot&lt;/b&gt;  &lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-star&quot;&gt;&lt;/i&gt; POPULAR&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;Temple Run 2&quot; class=&quot;link pop&quot; href=&quot;./play/temple-run-2/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/templerun.webp&quot;&gt;&lt;b&gt;Temple Run 2&lt;/b&gt;  &lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-star&quot;&gt;&lt;/i&gt; POPULAR&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;Tetris&quot; class=&quot;link&quot; href=&quot;./play/tetris/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/tetris.webp&quot;&gt;&lt;b&gt;Tetris&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;The Square&quot; class=&quot;link&quot; href=&quot;./play/thesquare/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/thesquare.webp&quot;&gt;&lt;b&gt;The Square&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Tic Tac Toe&quot; class=&quot;link&quot; href=&quot;./play/tic-tac-toe/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/toe2.webp&quot;&gt;&lt;b&gt;Tic Tac Toe&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Tic Tac Toe AI&quot; class=&quot;link&quot; href=&quot;./play/tic-tac-toe-ai/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/toeai.webp&quot;&gt;&lt;b&gt;Tic Tac Toe AI&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Timeshooter&quot; class=&quot;link&quot; href=&quot;./play/timeshooter/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/timeshooters.webp&quot;&gt;&lt;b&gt;Timeshooter&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Tom Run&quot; class=&quot;link bad&quot; href=&quot;./play/tomrun/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/tomrun.webp&quot;&gt;&lt;b&gt;Tom Run&lt;/b&gt;&lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-poop&quot;&gt;&lt;/i&gt; BAD&lt;/span&gt;&lt;/a&gt;
-            &lt;a id=&quot;Tower Master&quot; class=&quot;link&quot; href=&quot;./play/towermaster/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/towermaster.webp&quot;&gt;&lt;b&gt;Tower Master&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Tunnelrush&quot; class=&quot;link&quot; href=&quot;./play/tunnelrush/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/tunnelrush.webp&quot;&gt;&lt;b&gt;Tunnelrush&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;TV Static&quot; class=&quot;link&quot; href=&quot;./play/tv-static/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/tv-static.webp&quot;&gt;&lt;b&gt;TV Static&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Twerk Race 3D&quot; class=&quot;link&quot; href=&quot;./play/twerk-race-3d/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/twerk-race-3d.webp&quot;&gt;&lt;b&gt;Twerk Race 3D&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Twitch Tetris&quot; class=&quot;link&quot; href=&quot;./play/twitch-tetris/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/twitch-tetris.webp&quot;&gt;&lt;b&gt;Twitch Tetris&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Tyrone Tetris&quot; class=&quot;link&quot; href=&quot;./play/tyronetetris/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/tetris.webp&quot;&gt;&lt;b&gt;Tyrone Tetris&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;VELOCE&quot; class=&quot;link&quot; href=&quot;./play/veloce/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/VELOCE.webp&quot;&gt;&lt;b&gt;VELOCE&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Vex 3&quot; class=&quot;link&quot; href=&quot;./play/vex3/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/vex3.webp&quot;&gt;&lt;b&gt;Vex 3&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Vex 4&quot; class=&quot;link&quot; href=&quot;./play/vex4/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/vex4.webp&quot;&gt;&lt;b&gt;Vex 4&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Vex 5&quot; class=&quot;link&quot; href=&quot;./play/vex5/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/vex5.webp&quot;&gt;&lt;b&gt;Vex 5&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Vex 6&quot; class=&quot;link&quot; href=&quot;./play/vex6/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/vex6.webp&quot;&gt;&lt;b&gt;Vex 6&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Vex 7&quot; class=&quot;link&quot; href=&quot;./play/vex7/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/vex7.webp&quot;&gt;&lt;b&gt;Vex 7&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Wall Smash&quot; class=&quot;link&quot; href=&quot;./play/wallsmash/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/wallsmash.webp&quot;&gt;&lt;b&gt;Wall Smash&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Waterworks!&quot; class=&quot;link&quot; href=&quot;./play/waterworks/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/waterworks.webp&quot;&gt;&lt;b&gt;Waterworks!&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Weave Silk&quot; class=&quot;link&quot; href=&quot;./play/weavesilk/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/weavesilk.webp&quot;&gt;&lt;b&gt;Weave Silk&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;WebGL Fluid Simulation&quot; class=&quot;link&quot; href=&quot;./play/webgl-fluid-simulation/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/webgl-fluid-simulation.webp&quot;&gt;&lt;b&gt;WebGL Fluid Simulation&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Webretro&quot; class=&quot;link&quot; href=&quot;./play/webretro/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/webretro.webp&quot;&gt;&lt;b&gt;Webretro&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Whac A Mole&quot; class=&quot;link&quot; href=&quot;./play/whac-a-mole/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/Whac-A-Mole.webp&quot;&gt;&lt;b&gt;Whac A Mole&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Wordle&quot; class=&quot;link&quot; href=&quot;./play/wordle/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/wordle.webp&quot;&gt;&lt;b&gt;Wordle&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Worlds hardest game&quot; class=&quot;link&quot; href=&quot;./play/worlds-hardest-game/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/whg.webp&quot;&gt;&lt;b&gt;Worlds hardest game&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Worlds hardest game 2&quot; class=&quot;link&quot; href=&quot;./play/worlds-hardest-game-2/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/whg.webp&quot;&gt;&lt;b&gt;Worlds hardest game 2&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;X Trial Racing&quot; class=&quot;link&quot; href=&quot;./play/x-trial-racing/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/xtr.webp&quot;&gt;&lt;b&gt;X Trial Racing&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;xx142-b2exe&quot; class=&quot;link&quot; href=&quot;./play/xx142-b2exe/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/xx142-b2exe.webp&quot;&gt;&lt;b&gt;xx142-b2exe&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Zombs Royale&quot; class=&quot;link&quot; href=&quot;./play/zombs-royale/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/zombs-royale.webp&quot;&gt;&lt;b&gt;Zombs Royale&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Yoshifabrication&quot; class=&quot;link&quot; href=&quot;./play/yoshifabrication/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/yoshifabrication.webp&quot;&gt;&lt;b&gt;Yoshifabrication&lt;/b&gt;&lt;/a&gt;
-            &lt;a id=&quot;Zoro&quot; class=&quot;link stream&quot; href=&quot;./play/zoro/&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;&lt;img src=&quot;./icons/zoro.webp&quot;&gt;&lt;b&gt;Zoro.to&lt;/b&gt;&lt;span class=&quot;badge&quot;&gt;&lt;i class=&quot;fa-solid fa-file-video&quot;&gt;&lt;/i&gt; STREAMING&lt;/span&gt;&lt;/a&gt;
-            &lt;p class=&quot;game_title&quot;&gt;This project is completely open source! If you want to make your own version of this site &lt;a class=&quot;epci&quot; href=&quot;https://github.com/OddPvP/unblockedgames&quot;&gt;click here&lt;/a&gt; for more information! You can also see the beta site with more games &lt;a class=&quot;epci&quot; href=&quot;https://games.odd.gay/&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
-            &lt;p class=&quot;game_title&quot;&gt;Have any suggestions? Please tell us in our &lt;a class=&quot;epci&quot; href=&quot;https://discord.gg/xksWyP9aJv&quot;&gt;discord server&lt;/a&gt; or email us at requests@odd.gay in our &lt;a class=&quot;epci&quot; href=&quot;https://discord.gg/xksWyP9aJv&quot;&gt;discord server&lt;/a&gt; we also have many more links! So join in case this one gets blocked by your school!&lt;/p&gt;
-        &lt;/div&gt;
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Red's Games v2 9</title>
+      <link rel="icon" type="image/x-icon" href="./icons/favicon.png">
+        <meta property="og:title" content="Play red's games online" />
+        <meta property="og:description" content="All of the most popular games playable in your browser! With games such as Subway Surfers,Stick slasher, 1v1.lol, Retrobowl, Slope, and many more fun games!" />
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/d0c5025972.js" crossorigin="anonymous"></script>
+        <meta name="theme-color" content="var(--bgColor)">
+    </head>
+    <body>
+            <!--Page Content Below-->
+        <img id="userPhoto" class="animated rubberBand fast" src="icons/logo.png" alt="Undone">
+        <h1 class="animated jello game_title">Red's Games</h1>
+        <div id="links" class="animated fadeInLeft delay-1s games">
+            <div class="game_title"><input placeholder="Search" id="search" class="search" onkeyup="search_it()" type="search"><select id="tags" class="button" onclick="search_it()"><option value="all">All</option><option value="pop">Popular</option><option value="two">Two Player</option><option value="stream">Streaming</option><option value="bad">Bad Games</option></select></div>
+            <h2 class="animated jello game_title">All Games:</h2>
+            <a id="1 (2048 game)" class="link" href="./play/1/" target="_blank"><span class="bar"></span><img src="./icons/one.webp" alt="1 (2048 game)"><b>1 (2048 game)</b></a>
+            <a id="100 Player Pong" class="glink" href="./play/100-player-pong/" target="_blank"><span class="bar"></span><img src="./icons/100pong.webp"><b>100 Player Pong</b></a>
+            <a id="10 Minutes Till Dawn" class="link" href="./play/10-minutes-till-dawn/" target="_blank"><span class="bar"></span><img src="./icons/10m.webp"><b>10 Minutes Till Dawn</b></a>
+            <a id="burrito bison" class="link" href="./play/burrito bison/" target="_blank"><span class="bar"></span><img src="./icons/birrito.jpeg"><b>burrito bison</b></a>
+            <a id="stickslasher" class="link" href="./play/stickslasher/" target="_blank"><span class="bar"></span><img src="./icons/Stickslaher.jpeg"><b>Stick Slasher</b></a>
+            <a id="spotify" class="link stream" href="./play/spotify/" target="_blank"><span class="bar"></span><img src="./icons/spotify.png"><b>spotify</b></a>
+            <a id="1v1.lol" class="link pop" href="./play/1v1/" target="_blank"><span class="bar"></span><img src="./icons/1v1.webp"><b>1v1.lol</b>  <span class="badge"><i class="fa-solid fa-star"></i> POPULAR</span><span class="badge"></a>
+            <a id="1v1.space" class="link" href="./play/1v1space/" target="_blank"><span class="bar"></span><img src="./icons/1v1space.webp"><b>1v1.space</b></a>
+            <a id="2048" class="link" href="./play/2048/" target="_blank"><span class="bar"></span><img src="./icons/2048.webp"><b>2048</b></a>
+            <a id="2048 Multitask" class="link" href="./play/2048-multitask/" target="_blank"><span class="bar"></span><img src="./icons/multit.webp"><b>2048 Multitask</b></a>
+            <a id="9007199254740992" class="link" href="./play/9007199254740992/" target="_blank"><span class="bar"></span><img src="./icons/900.webp"><b>9007199254740992 (2048 game)</b></a>
+            <a id="Achievement Unlocked" class="link" href="./play/achievementunlocked/" target="_blank"><span class="bar"></span><img src="./icons/ache.webp"><b>Achievement Unlocked</b></a>
+            <a id="A Dark Room" class="link" href="./play/adarkroom/" target="_blank"><span class="bar"></span><img src="./icons/adarkroom.webp"><b>A Dark Room</b></a>
+            <a id="Ages of Conflict" class="link" href="./play/ages-of-conflict/" target="_blank"><span class="bar"></span><img src="./icons/ages-of-conflict.webp"><b>Ages of Conflict</b></a>
+            <a id="Alien Hominid" class="link" href="./play/alienhominid/" target="_blank"><span class="bar"></span><img src="./icons/alienhominid.webp"><b>Alien Hominid</b></a>
+            <a id="Amidst the Clouds" class="link" href="./play/amidst-the-clouds/" target="_blank"><span class="bar"></span><img src="./icons/amidst-the-clouds.webp"><b>Amidst the Clouds</b></a>
+            <a id="Avalanche" class="link" href="./play/avalanche/" target="_blank"><span class="bar"></span><img src="./icons/avalanche.webp"><b>Avalanche</b></a>
+            <a id="Backrooms" class="link" href="./play/backrooms/" target="_blank"><span class="bar"></span><img src="./icons/backrooms.webp"><b>Backrooms</b></a>
+            <a id="Bad Ice Cream" class="link" href="./play/bad-ice-cream/" target="_blank"><span class="bar"></span><img src="./icons/bad-ice-cream.webp"><b>Bad Ice Cream</b></a>
+            <a id="Bad Ice Cream 2" class="link" href="./play/bad-ice-cream-2/" target="_blank"><span class="bar"></span><img src="./icons/bad-ice-cream-2.webp"><b>Bad Ice Cream 2</b></a>
+            <a id="Bad Ice Cream 3" class="link" href="./play/bad-ice-cream-3/" target="_blank"><span class="bar"></span><img src="./icons/bad-ice-cream-3.webp"><b>Bad Ice Cream 3</b></a>
+            <a id="Baldi's Basics" class="link" href="./play/baldis-basics/" target="_blank"><span class="bar"></span><img src="./icons/baldis-basics.webp"><b>Baldi's Basics</b></a>
+            <a id="Ball Hop" class="link" href="./play/ball-hop/" target="_blank"><span class="bar"></span><img src="./icons/ballhop.webp"><b>Ball Hop</b></a>
+            <a id="Ballistic Chickens" class="link" href="./play/ballistic-chickens/" target="_blank"><span class="bar"></span><img src="./icons/ballistic-chickens.webp"><b>Ballistic Chickens</b></a>
+            <a id="Basketball Stars" class="link" href="./play/basketball-stars/" target="_blank"><span class="bar"></span><img src="./icons/BAS.webp"><b>Basketball Stars</b></a>
+            <a id="Big Tower Tiny Square" class="link" href="./play/big-tower-tiny-square/" target="_blank"><span class="bar"></span><img src="./icons/btts.webp"><b>Big Tower Tiny Square</b></a>
+            <a id="Biters.io" class="link" href="./play/biters-io/" target="_blank"><span class="bar"></span><img src="./icons/biters.webp"><b>Biters.io</b></a>
+            <a id="Bitlife BitLife" class="link" href="./play/bitlife/" target="_blank"><span class="bar"></span><img src="./icons/bitlife.webp"><b>Bitlife</b></a>
+            <a id="Blocky Tower" class="link" href="./play/blocky-tower/" target="_blank"><span class="bar"></span><img src="./icons/blocky.webp"><b>Blocky Tower</b></a>
+            <a id="Bloons TD " class="link" href="./play/bloonstd/" target="_blank"><span class="bar"></span><img src="./icons/bloonstd.webp"><b>Bloons TD</b></a>
+            <a id="Bloons TD 2" class="link" href="./play/bloonstd2/" target="_blank"><span class="bar"></span><img src="./icons/bloonstd2.webp"><b>Bloons TD 2</b></a>
+            <a id="Bloons TD 4" class="link" href="./play/bloonstd4/" target="_blank"><span class="bar"></span><img src="./icons/bloonstd4.webp"><b>Bloons TD 4</b></a>
+            <a id="Bloxorz" class="link" href="./play/bloxorz/" target="_blank"><span class="bar"></span><img src="./icons/bloxorz.webp"><b>Bloxorz</b></a>
+            <a id="Bouncy Basketball<" class="link" href="./play/bouncybasketball/" target="_blank"><span class="bar"></span><img src="./icons/basketball.webp"><b>Bouncy Basketball</b></a>
+            <a id="Boxing Physics" class="link two" href="./play/boxing-physics/" target="_blank"><span class="bar"></span><img src="./icons/box.webp"><b>Boxing Physics</b><span class="badge"><i class="fa-solid fa-user"></i> 2 Player</span></a>
+            <a id="Breaklock" class="link" href="./play/breaklock/" target="_blank"><span class="bar"></span><img src="./icons/breaklock.webp"><b>Breaklock</b></a>
+            <a id="Breakout" class="link" href="./play/breakout/" target="_blank"><span class="bar"></span><img src="./icons/breakout.webp"><b>Breakout</b></a>
+            <a id="Chrome Dino" class="link" href="./play/chrome-dino/" target="_blank"><span class="bar"></span><img src="./icons/chrom.webp"><b>Chrome Dino</b></a>
+            <a id="Circlo" class="link" href="./play/circlo/" target="_blank"><span class="bar"></span><img src="./icons/circlo.webp"><b>Circlo</b></a>
+            <a id="Cluster Rush" class="link" href="./play/cluster-rush/" target="_blank"><span class="bar"></span><img src="./icons/cluster.webp"><b>Cluster Rush</b></a>
+            <a id="Connect 3" class="link" href="./play/connect3/" target="_blank"><span class="bar"></span><img src="./icons/con3.webp"><b>Connect 3</b></a>
+            <a id="Cookie Clicker" class="link" href="./play/cookie/" target="_blank"><span class="bar"></span><img src="./icons/cookie.webp"><b>Cookie Clicker</b></a>
+            <a id="Core Ball" class="link" href="./play/core-ball/" target="_blank"><span class="bar"></span><img src="./icons/coreball.webp"><b>Core Ball</b></a>
+            <a id="Crossyroad" class="link pop" href="./play/crossyroad/" target="_blank"><span class="bar"></span><img src="./icons/crossyroad.webp"><b>Crossyroad</b>  <span class="badge"><i class="fa-solid fa-star"></i> POPULAR</span></a>
+            <a id="CSGO-Clicker" class="link" href="./play/csgo-clicker/" target="_blank"><span class="bar"></span><img src="./icons/CSGO.webp"><b>CSGO-Clicker</b></a>
+            <a id="Cupcakes (2048 game)" class="link pop" href="./play/cupcakes/" target="_blank"><span class="bar"></span><img src="./icons/cupcakes.webp"><b>Cupcakes (2048 game)</b>  <span class="badge"><i class="fa-solid fa-star"></i> POPULAR</span></a>
+            <a id="Cut The Rope" class="link" href="./play/cuttherope/" target="_blank"><span class="bar"></span><img src="./icons/ctr.webp"><b>Cut The Rope</b></a>
+            <a id="Cyber City Driver" class="link two" href="./play/cyber-city-driver/" target="_blank"><span class="bar"></span><img src="./icons/cyber.webp"><b>Cyber City Driver</b><span class="badge"><i class="fa-solid fa-user"></i> 2 Player</span></a>
+            <a id="Disc US" class="link two" href="./play/discus/" target="_blank"><span class="bar"></span><img src="./icons/sus.webp"><b>Disc US</b><span class="badge"><i class="fa-solid fa-user"></i> 2 Player</span></a>
+            <a id="Doge miner" class="link" href="./play/dogeminer/" target="_blank"><span class="bar"></span><img src="./icons/Dogecoin.webp"><b>Doge miner</b></a>
+            <a id="Doodle Jump" class="link" href="./play/doodlejump/" target="_blank"><span class="bar"></span><img src="./icons/doodle.webp"><b>Doodle Jump</b></a>
+            <a id="Drift City" class="link" href="./play/drift-city/" target="_blank"><span class="bar"></span><img src="./icons/driftc.webp"><b>Drift City</b></a>
+            <a id="DriftKing.io" class="link" href="./play/driftking/" target="_blank"><span class="bar"></span><img src="./icons/driftking.webp"><b>DriftKing.io</b></a>
+            <a id="Ducklife 1" class="link" href="./play/ducklife1/" target="_blank"><span class="bar"></span><img src="./icons/ducklife.webp"><b>Ducklife 1</b></a>
+            <a id="Ducklife 2" class="link" href="./play/ducklife2/" target="_blank"><span class="bar"></span><img src="./icons/ducklife2.webp"><b>Ducklife 2</b></a>
+            <a id="Ducklife 3" class="link" href="./play/ducklife3/" target="_blank"><span class="bar"></span><img src="./icons/ducklife3.webp"><b>Ducklife 3</b></a>
+            <a id="Ducklife 4" class="link" href="./play/ducklife4/" target="_blank"><span class="bar"></span><img src="./icons/ducklife4.webp"><b>Ducklife 4</b></a>
+            <a id="Dune" class="link" href="./play/dune/" target="_blank"><span class="bar"></span><img src="./icons/dune.webp"><b>Dune</b></a>
+            <a id="Dunkers Fight" class="link two" href="./play/dunkers-fight/" target="_blank"><span class="bar"></span><img src="./icons/dunk.webp"><b>Dunkers Fight</b><span class="badge"><i class="fa-solid fa-user"></i> 2 Player</span></a>
+            <a id="Eat.io" class="link" href="./play/eatio/" target="_blank"><span class="bar"></span><img src="./icons/eatio.webp"><b>Eat.io</b></a>
+            <a id="Edge Surf" class="link" href="./play/edge-surf/" target="_blank"><span class="bar"></span><img src="./icons/edge-surf.webp"><b>Edge Surf</b></a>
+            <a id="Edge Not Found" class="link" href="./play/edgenotfound/" target="_blank"><span class="bar"></span><img src="./icons/edgenotfound.webp"><b>Edge Not Found</b></a>
+            <a id="Eel Slap" class="link" href="./play/eel-slap/" target="_blank"><span class="bar"></span><img src="./icons/eel-slap.webp"><b>Eel Slap</b></a>
+            <a id="Eggy Car" class="link" href="./play/eggy-car/" target="_blank"><span class="bar"></span><img src="./icons/eggy-car.webp"><b>Eggy Car</b></a>
+            <a id="Elastic Man" class="link" href="./play/elasticman/" target="_blank"><span class="bar"></span><img src="./icons/elasticman.webp"><b>Elastic Man</b></a>
+            <a id="Endless War 3" class="link" href="./play/endlesswar3/" target="_blank"><span class="bar"></span><img src="./icons/endlesswar3.webp"><b>Endless War 3</b></a>
+            <a id="Excaping The Prison" class="link" href="./play/excapingtheprison/" target="_blank"><span class="bar"></span><img src="./icons/excapingtheprison.webp"><b>Excaping The Prison</b></a>
+            <a id="Evil Glitch" class="link" href="./play/evil-glitch/" target="_blank"><span class="bar"></span><img src="./icons/evil-glitch.webp"><b>Evil Glitch</b></a>
+            <a id="Evolution" class="link" href="./play/evolution/" target="_blank"><span class="bar"></span><img src="./icons/evolution.webp"><b>Evolution</b></a>
+            <a id="Exo" class="link" href="./play/exo/" target="_blank"><span class="bar"></span><img src="./icons/exo.webp"><b>Exo</b></a>
+            <a id="Fall Boys" class="link two" href="./play/fallboys/" target="_blank"><span class="bar"></span><img src="./icons/fall-boys.webp"><b>Fall Boys</b><span class="badge"><i class="fa-solid fa-user"></i> 2 Player</span></a>
+            <a id="Ferge" class="link two" href="./play/ferge/" target="_blank"><span class="bar"></span><img src="./icons/ferge.webp"><b>Ferge.io</b><span class="badge"><i class="fa-solid fa-user"></i> 2 Player</span></a>
+            <a id="Flappy Bird" class="link" href="./play/flappy/" target="_blank"><span class="bar"></span><img src="./icons/flappy.webp"><b>Flappy Bird</b></a>
+            <a id="FlipHero.io" class="link" href="./play/fliphero/" target="_blank"><span class="bar"></span><img src="./icons/fliphero.webp"><b>FlipHero.io</b></a>
+            <a id="FNAF 1" class="link" href="./play/fnaf/" target="_blank"><span class="bar"></span><img src="./icons/fnaf.webp"><b>FNAF 1</b></a>
+            <a id="FNAF 2" class="link" href="./play/fnaf2/" target="_blank"><span class="bar"></span><img src="./icons/fnaf.webp"><b>FNAF 2</b></a>
+            <a id="FNAF 3" class="link" href="./play/fnaf3/" target="_blank"><span class="bar"></span><img src="./icons/fnaf.webp"><b>FNAF 3</b></a>
+            <a id="FNAF 4" class="link" href="./play/fnaf4/" target="_blank"><span class="bar"></span><img src="./icons/fnaf.webp"><b>FNAF 4</b></a>
+            <a id="Friday Night Funkin" class="link" href="./play/fridaynightfunkin/" target="_blank"><span class="bar"></span><img src="./icons/fridaynightfunkin.webp"><b>Friday Night Funkin</b></a>
+            <a id="Fruit Ninja" class="link" href="./play/fruitninja/" target="_blank"><span class="bar"></span><img src="./icons/fruitninja.webp"><b>Fruit Ninja</b></a>
+            <a id="Funny Shooter 2" class="link" href="./play/funnyshooter/" target="_blank"><span class="bar"></span><img src="./icons/funnyshooter.webp"><b>Funny Shooter</b></a>
+            <a id="Geometrydash" class="link" href="./play/geometrydash/" target="_blank"><span class="bar"></span><img src="./icons/geodash.webp"><b>Geometrydash</b></a>
+            <a id="Good Night" class="link" href="./play/goodnight/" target="_blank"><span class="bar"></span><img src="./icons/gn.webp"><b>Good Night</b></a>
+            <a id="Hextris" class="link" href="./play/hextris/" target="_blank"><span class="bar"></span><img src="./icons/hextrt.webp"><b>Hextris</b></a>
+            <a id="Idle Breakout" class="link" href="./play/idle-breakout/" target="_blank"><span class="bar"></span><img src="./icons/idlebreakout.webp"><b>Idle Breakout</b></a>
+            <a id="Idle Shark" class="link" href="./play/idle-shark/" target="_blank"><span class="bar"></span><img src="./icons/sharkgame.webp"><b>Idle Shark</b></a>
+            <a id="Impossible Quiz" class="link" href="./play/impossiblequiz/" target="_blank"><span class="bar"></span><img src="./icons/impossiblequiz.webp"><b>Impossible Quiz</b></a>
+            <a id="Interactive Buddy" class="link" href="./play/interactivebuddy/" target="_blank"><span class="bar"></span><img src="./icons/interactivebuddy.webp"><b>Interactive Buddy</b></a>
+            <a id="Jetpack Joyride" class="link" href="./play/jetpack-joyride/" target="_blank"><span class="bar"></span><img src="./icons/jetpack-joyride.webp"><b>Jetpack Joyride</b></a>
+            <a id="Just Fall" class="link" href="./play/just-fall/" target="_blank"><span class="bar"></span><img src="./icons/just-fall.webp"><b>Just Fall</b></a>
+            <a id="Just One Boss" class="link" href="./play/just-one-boss/" target="_blank"><span class="bar"></span><img src="./icons/just-one-boss.webp"><b>Just One Boss</b></a>
+            <a id="Kitchen Gun Game" class="link" href="./play/kitchen-gun-game/" target="_blank"><span class="bar"></span><img src="./icons/kitchen-gun-game.webp"><b>Kitchen Gun Game</b></a>
+            <a id="Kitten Cannon" class="link" href="./play/kittencannon/" target="_blank"><span class="bar"></span><img src="./icons/kittencannon.webp"><b>Kitten Cannon</b></a>
+            <a id="Krunker" class="link" href="./play/krunker/" target="_blank"><span class="bar"></span><img src="./icons/krunker.webp"><b>Krunker</b></a>
+            <a id="learntofly" class="link" href="./play/learntofly/" target="_blank"><span class="bar"></span><img src="./icons/learntofly.webp"><b>learntofly</b></a>
+            <a id="learntofly2" class="link" href="./play/learntofly2/" target="_blank"><span class="bar"></span><img src="./icons/learntofly2.webp"><b>learntofly 2</b></a>
+            <a id="Mario" class="link" href="./play/mario/" target="_blank"><span class="bar"></span><img src="./icons/mario.webp"><b>Mario</b></a>
+            <a id="Minecraft" class="link pop" href="./play/minecraft/" target="_blank"><span class="bar"></span><img src="./icons/minecraft.webp"><b>Minecraft</b><span class="badge"><i class="fa-solid fa-star"></i> POPULAR</span></a>
+            <a id="Minecraft JS" class="link" href="./play/minecraft-js/" target="_blank"><span class="bar"></span><img src="./icons/minecraft.webp"><b>Minecraft JS</b></a>
+            <a id="motox3m" class="link" href="./play/motox3m/" target="_blank"><span class="bar"></span><img src="./icons/motox3m.webp"><b>Motox3m</b></a>
+            <a id="motox3m Pool Party" class="link" href="./play/motox3m-pool/" target="_blank"><span class="bar"></span><img src="./icons/motox3m-pool.webp"><b>Motox3m Pool Party</b></a>
+            <a id="motox3m Spooky Land" class="link" href="./play/motox3m-spooky/" target="_blank"><span class="bar"></span><img src="./icons/moto-spook.webp"><b>Motox3m Spooky Land</b></a>
+            <a id="motox3m Winter" class="link" href="./play/motox3m-winter/" target="_blank"><span class="bar"></span><img src="./icons/motox3m-winter.webp"><b>Motox3m Winter</b></a>
+            <a id="motox3m2" class="link" href="./play/motox3m2/" target="_blank"><span class="bar"></span><img src="./icons/motox3m2.webp"><b>Motox3m2</b></a>
+            <a id="Multiplayer Pong" class="link two" href="./play/multiplayer-pong/" target="_blank"><span class="bar"></span><img src="./icons/pong.webp"><b>Multiplayer Pong</b><span class="badge"><i class="fa-solid fa-user"></i> 2 Player</span></a>
+            <a id="Pacman" class="link" href="./play/pacman/" target="_blank"><span class="bar"></span><img src="./icons/pacman.webp"><b>Pacman</b></a>
+            <a id="Paper.io 2" class="link" href="./play/paperio/" target="_blank"><span class="bar"></span><img src="./icons/paperio.webp"><b>Paper.io 2</b></a>
+            <a id="Papery Planes" class="link" href="./play/papery-planes/" target="_blank"><span class="bar"></span><img src="./icons/paperplane.webp"><b>Papery Planes</b></a>
+            <a id="Particle Clicker" class="link" href="./play/particle-clicker/" target="_blank"><span class="bar"></span><img src="./icons/parclick.webp"><b>Particle Clicker</b></a>
+            <a id="Picky Package" class="link" href="./play/picky-package/" target="_blank"><span class="bar"></span><img src="./icons/pickyback.webp"><b>Picky Package</b></a>
+            <a id="Pokemon Fire Red" class="link" href="./play/pokemonfirered/" target="_blank"><span class="bar"></span><img src="./icons/PokemonFireRed.webp"><b>Pokemon Fire Red</b></a>
+            <a id="Pokey Stick" class="link" href="./play/pokey-stick/" target="_blank"><span class="bar"></span><img src="./icons/pogy.webp"><b>Pokey Stick</b></a>
+            <a id="Pong" class="link" href="./play/pong/" target="_blank"><span class="bar"></span><img src="./icons/pong.webp"><b>Pong</b></a>
+            <a id="PushBack" class="link" href="./play/pushback/" target="_blank"><span class="bar"></span><img src="./icons/pushback.webp"><b>PushBack</b></a>
+          <a id="Browser Quest" class="link" href="./play/browserquest/" target="_blank"><span class="bar"></span><img src="./icons/BrowserQuest.webp"><b>Browser Quest</b></a>
+            <a id="Racer" class="link" href="./play/racer/" target="_blank"><span class="bar"></span><img src="./icons/Racer.webp"><b>Racer</b></a>
+            <a id="Radius Raid" class="link" href="./play/radiusraid/" target="_blank"><span class="bar"></span><img src="./icons/raid.webp"><b>Radius Raid</b></a>
+            <a id="Restaurant Rush" class="link" href="./play/restaurant-rush/" target="_blank"><span class="bar"></span><img src="./icons/resr.webp"><b>Restaurant Rush</b></a>
+            <a id="Retro Bowl" class="link" href="./play/retrobowl/" target="_blank"><span class="bar"></span><img src="./icons/retrobowl.webp"><b>Retro Bowl</b></a>
+            <a id="Retro Haunt" class="link" href="./play/retrohaunt/" target="_blank"><span class="bar"></span><img src="./icons/retrohaunt.webp"><b>Retro Haunt</b></a>
+            <a id="Rooftop Snipers 2" class="link" href="./play/rooftop-snipers-2/" target="_blank"><span class="bar"></span><img src="./icons/Rooftop-Snipers.webp"><b>Rooftop Snipers 2</b></a>
+            <a id="Run 3" class="link" href="./play/run3/" target="_blank"><span class="bar"></span><img src="./icons/run3.webp"><b>Run 3</b></a>
+            <a id="Sans" class="link pop" href="./play/sans/" target="_blank"><span class="bar"></span><img src="./icons/sans.webp"><b>Sans</b>  <span class="badge"><i class="fa-solid fa-star"></i> POPULAR</span></a>
+            <a id="Slope" class="link pop" href="./play/slope/" target="_blank"><span class="bar"></span><img src="./icons/slope.webp"><b>Slope</b>  <span class="badge"><i class="fa-solid fa-star"></i> POPULAR</span></a>
+            <a id="Space Invaders" class="link" href="./play/spaceinvaders/" target="_blank"><span class="bar"></span><img src="./icons/spaceinv.webp"><b>Space Invaders</b></a>
+            <a id="Stack" class="link" href="./play/stack/" target="_blank"><span class="bar"></span><img src="./icons/stack.webp"><b>Stack</b></a>
+            <a id="Stack Ball" class="link" href="./play/stack-ball/" target="_blank"><span class="bar"></span><img src="./icons/stackball.webp"><b>Stack Ball</b></a>
+            <a id="Station Meltdown" class="link" href="./play/station-meltdown/" target="_blank"><span class="bar"></span><img src="./icons/meltdown.webp"><b>Station Meltdown</b></a>
+            <a id="Steal This Election" class="link two" href="./play/steal-this-election/" target="_blank"><span class="bar"></span><img src="./icons/elec.webp"><b>Steal This Election</b><span class="badge"><i class="fa-solid fa-user"></i> 2 Player</span></a>
+            <a id="Subway Surfers: Beijing" class="link" href="./play/subwaysurfersbeijing/" target="_blank"><span class="bar"></span><img src="./icons/subwaysurferbeijing.webp"><b>Subway Surfers: Beijing</b></a>
+            <a id="Subway Surfers: Houston" class="link" href="./play/subwaysurfershouston/" target="_blank"><span class="bar"></span><img src="./icons/subwaysurfershouston.webp"><b>Subway Surfers: Houston</b></a>
+            <a id="Subway Surfers: Monaco" class="link" href="./play/subwaysurfersmonaco/" target="_blank"><span class="bar"></span><img src="./icons/SubwayMonaco.webp"><b>Subway Surfers: Monaco</b></a>
+            <a id="Subway Surfers: San Francisco" class="link pop" href="./play/subwaysurferssanfrancisco/" target="_blank"><span class="bar"></span><img src="./icons/subsan.webp"><b>Subway Surfers: San Francisco</b>  <span class="badge"><i class="fa-solid fa-star"></i> POPULAR</span></a>
+            <a id="SuperHot" class="link pop" href="./play/superhot/" target="_blank"><span class="bar"></span><img src="./icons/superhot.webp"><b>SuperHot</b>  <span class="badge"><i class="fa-solid fa-star"></i> POPULAR</span></a>
+            <a id="Temple Run 2" class="link pop" href="./play/temple-run-2/" target="_blank"><span class="bar"></span><img src="./icons/templerun.webp"><b>Temple Run 2</b>  <span class="badge"><i class="fa-solid fa-star"></i> POPULAR</span></a>
+            <a id="Tetris" class="link" href="./play/tetris/" target="_blank"><span class="bar"></span><img src="./icons/tetris.webp"><b>Tetris</b></a>
+            <a id="The Square" class="link" href="./play/thesquare/" target="_blank"><span class="bar"></span><img src="./icons/thesquare.webp"><b>The Square</b></a>
+            <a id="Tic Tac Toe" class="link" href="./play/tic-tac-toe/" target="_blank"><span class="bar"></span><img src="./icons/toe2.webp"><b>Tic Tac Toe</b></a>
+            <a id="Tic Tac Toe AI" class="link" href="./play/tic-tac-toe-ai/" target="_blank"><span class="bar"></span><img src="./icons/toeai.webp"><b>Tic Tac Toe AI</b></a>
+            <a id="Timeshooter" class="link" href="./play/timeshooter/" target="_blank"><span class="bar"></span><img src="./icons/timeshooters.webp"><b>Timeshooter</b></a>
+            <a id="Tom Run" class="link bad" href="./play/tomrun/" target="_blank"><span class="bar"></span><img src="./icons/tomrun.webp"><b>Tom Run</b><span class="badge"><i class="fa-solid fa-poop"></i> BAD</span></a>
+            <a id="Tower Master" class="link" href="./play/towermaster/" target="_blank"><span class="bar"></span><img src="./icons/towermaster.webp"><b>Tower Master</b></a>
+            <a id="Tunnelrush" class="link" href="./play/tunnelrush/" target="_blank"><span class="bar"></span><img src="./icons/tunnelrush.webp"><b>Tunnelrush</b></a>
+            <a id="TV Static" class="link" href="./play/tv-static/" target="_blank"><span class="bar"></span><img src="./icons/tv-static.webp"><b>TV Static</b></a>
+            <a id="Twerk Race 3D" class="link" href="./play/twerk-race-3d/" target="_blank"><span class="bar"></span><img src="./icons/twerk-race-3d.webp"><b>Twerk Race 3D</b></a>
+            <a id="Twitch Tetris" class="link" href="./play/twitch-tetris/" target="_blank"><span class="bar"></span><img src="./icons/twitch-tetris.webp"><b>Twitch Tetris</b></a>
+            <a id="Tyrone Tetris" class="link" href="./play/tyronetetris/" target="_blank"><span class="bar"></span><img src="./icons/tetris.webp"><b>Tyrone Tetris</b></a>
+            <a id="VELOCE" class="link" href="./play/veloce/" target="_blank"><span class="bar"></span><img src="./icons/VELOCE.webp"><b>VELOCE</b></a>
+            <a id="Vex 3" class="link" href="./play/vex3/" target="_blank"><span class="bar"></span><img src="./icons/vex3.webp"><b>Vex 3</b></a>
+            <a id="Vex 4" class="link" href="./play/vex4/" target="_blank"><span class="bar"></span><img src="./icons/vex4.webp"><b>Vex 4</b></a>
+            <a id="Vex 5" class="link" href="./play/vex5/" target="_blank"><span class="bar"></span><img src="./icons/vex5.webp"><b>Vex 5</b></a>
+            <a id="Vex 6" class="link" href="./play/vex6/" target="_blank"><span class="bar"></span><img src="./icons/vex6.webp"><b>Vex 6</b></a>
+            <a id="Vex 7" class="link" href="./play/vex7/" target="_blank"><span class="bar"></span><img src="./icons/vex7.webp"><b>Vex 7</b></a>
+            <a id="Wall Smash" class="link" href="./play/wallsmash/" target="_blank"><span class="bar"></span><img src="./icons/wallsmash.webp"><b>Wall Smash</b></a>
+            <a id="Waterworks!" class="link" href="./play/waterworks/" target="_blank"><span class="bar"></span><img src="./icons/waterworks.webp"><b>Waterworks!</b></a>
+            <a id="Weave Silk" class="link" href="./play/weavesilk/" target="_blank"><span class="bar"></span><img src="./icons/weavesilk.webp"><b>Weave Silk</b></a>
+            <a id="WebGL Fluid Simulation" class="link" href="./play/webgl-fluid-simulation/" target="_blank"><span class="bar"></span><img src="./icons/webgl-fluid-simulation.webp"><b>WebGL Fluid Simulation</b></a>
+            <a id="Webretro" class="link" href="./play/webretro/" target="_blank"><span class="bar"></span><img src="./icons/webretro.webp"><b>Webretro</b></a>
+            <a id="Whac A Mole" class="link" href="./play/whac-a-mole/" target="_blank"><span class="bar"></span><img src="./icons/Whac-A-Mole.webp"><b>Whac A Mole</b></a>
+            <a id="Wordle" class="link" href="./play/wordle/" target="_blank"><span class="bar"></span><img src="./icons/wordle.webp"><b>Wordle</b></a>
+            <a id="Worlds hardest game" class="link" href="./play/worlds-hardest-game/" target="_blank"><span class="bar"></span><img src="./icons/whg.webp"><b>Worlds hardest game</b></a>
+            <a id="Worlds hardest game 2" class="link" href="./play/worlds-hardest-game-2/" target="_blank"><span class="bar"></span><img src="./icons/whg.webp"><b>Worlds hardest game 2</b></a>
+            <a id="X Trial Racing" class="link" href="./play/x-trial-racing/" target="_blank"><span class="bar"></span><img src="./icons/xtr.webp"><b>X Trial Racing</b></a>
+            <a id="xx142-b2exe" class="link" href="./play/xx142-b2exe/" target="_blank"><span class="bar"></span><img src="./icons/xx142-b2exe.webp"><b>xx142-b2exe</b></a>
+            <a id="Zombs Royale" class="link" href="./play/zombs-royale/" target="_blank"><span class="bar"></span><img src="./icons/zombs-royale.webp"><b>Zombs Royale</b></a>
+            <a id="Yoshifabrication" class="link" href="./play/yoshifabrication/" target="_blank"><span class="bar"></span><img src="./icons/yoshifabrication.webp"><b>Yoshifabrication</b></a>
+            <a id="Zoro" class="link stream" href="./play/zoro/" target="_blank"><span class="bar"></span><img src="./icons/zoro.webp"><b>Zoro.to</b><span class="badge"><i class="fa-solid fa-file-video"></i> STREAMING</span></a>
+            <p class="game_title">This project is completely open source! If you want to make your own version of this site <a class="epci" href="https://github.com/OddPvP/unblockedgames">click here</a> for more information! You can also see the beta site with more games <a class="epci" href="https://games.odd.gay/">here</a>!</p>
+            <p class="game_title">Have any suggestions? Please tell us in our <a class="epci" href="https://discord.gg/xksWyP9aJv">discord server</a> or email us at requests@odd.gay in our <a class="epci" href="https://discord.gg/xksWyP9aJv">discord server</a> we also have many more links! So join in case this one gets blocked by your school!</p>
+        </div>
 
-        &lt;script&gt;
+        <script>
             function search_it() {
-                var tag = document.getElementById(&quot;tags&quot;).value
-                var what_search = document.getElementById(&quot;search&quot;).value
-                var pop_list = document.querySelectorAll(&quot;.pop&quot;)
-                var two_list = document.querySelectorAll(&quot;.two&quot;)
-                if(what_search === &quot;&quot; &amp;&amp; tag == &quot;all&quot;){
-                    for(var i=0;i&lt;game_list.length;i++){
-                        document.getElementById(game_list[i].id).style.display = &quot;flex&quot;
+                var tag = document.getElementById("tags").value
+                var what_search = document.getElementById("search").value
+                var pop_list = document.querySelectorAll(".pop")
+                var two_list = document.querySelectorAll(".two")
+                if(what_search === "" && tag == "all"){
+                    for(var i=0;i<game_list.length;i++){
+                        document.getElementById(game_list[i].id).style.display = "flex"
                     }
-                    for(var i=0;i&lt;good_games.length;i++){
-                        document.getElementById(good_games[i].id).style.display = &quot;flex&quot;
+                    for(var i=0;i<good_games.length;i++){
+                        document.getElementById(good_games[i].id).style.display = "flex"
                     }
                 }else{
-                    var active_list = document.querySelectorAll(&quot;.active&quot;)
-                    for(var i=0;i&lt;active_list.length;i++){
-                        document.getElementById(active_list[i].id).classList.remove(&quot;active&quot;)
+                    var active_list = document.querySelectorAll(".active")
+                    for(var i=0;i<active_list.length;i++){
+                        document.getElementById(active_list[i].id).classList.remove("active")
                     }
-                    for(var i=0;i&lt;game_list.length;i++){
-                        document.getElementById(game_list[i].id).style.display = &quot;none&quot;
+                    for(var i=0;i<game_list.length;i++){
+                        document.getElementById(game_list[i].id).style.display = "none"
                     }
-                    for(var i=0;i&lt;good_games.length;i++){
-                        document.getElementById(good_games[i].id).style.display = &quot;none&quot;
+                    for(var i=0;i<good_games.length;i++){
+                        document.getElementById(good_games[i].id).style.display = "none"
                     }
-                    for(var i=0;i&lt;game_list.length;i++){
+                    for(var i=0;i<game_list.length;i++){
                         item = game_list[i].id.toLowerCase()
                         item2 = document.getElementById(game_list[i].id)
                         if(item.includes(what_search.toLowerCase())){
-                            if(tag == &quot;pop&quot; &amp;&amp; item2.classList.contains(&quot;pop&quot;)){
-                                document.getElementById(game_list[i].id).classList.add(&quot;active&quot;)
+                            if(tag == "pop" && item2.classList.contains("pop")){
+                                document.getElementById(game_list[i].id).classList.add("active")
                             }
-                            else if(tag == &quot;two&quot; &amp;&amp; item2.classList.contains(&quot;two&quot;)){
-                                document.getElementById(game_list[i].id).classList.add(&quot;active&quot;)
+                            else if(tag == "two" && item2.classList.contains("two")){
+                                document.getElementById(game_list[i].id).classList.add("active")
                             }
-                            else if(tag == &quot;stream&quot; &amp;&amp; item2.classList.contains(&quot;stream&quot;)){
-                                document.getElementById(game_list[i].id).classList.add(&quot;active&quot;)
+                            else if(tag == "stream" && item2.classList.contains("stream")){
+                                document.getElementById(game_list[i].id).classList.add("active")
                             }
-                            else if(tag == &quot;bad&quot; &amp;&amp; item2.classList.contains(&quot;bad&quot;)){
-                                document.getElementById(game_list[i].id).classList.add(&quot;active&quot;)
+                            else if(tag == "bad" && item2.classList.contains("bad")){
+                                document.getElementById(game_list[i].id).classList.add("active")
                             }
-                            else if(tag == &quot;all&quot;){
-                                document.getElementById(game_list[i].id).classList.add(&quot;active&quot;)
+                            else if(tag == "all"){
+                                document.getElementById(game_list[i].id).classList.add("active")
                             }
                             }
                         }
                 }}
-            var game_list = document.querySelectorAll(&quot;.link&quot;);
-            var good_games = document.querySelectorAll(&quot;.glink&quot;);
-            search_enter = document.getElementById(&quot;search&quot;);
-            search_enter.addEventListener(&quot;keyup&quot;,(event) =&gt; {
-                if(event.key === &quot;Enter&quot;){
+            var game_list = document.querySelectorAll(".link");
+            var good_games = document.querySelectorAll(".glink");
+            search_enter = document.getElementById("search");
+            search_enter.addEventListener("keyup",(event) => {
+                if(event.key === "Enter"){
                     search_it();
                 }
             })
 
-        &lt;/script&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
+        </script>
+    </body>
+</html>
