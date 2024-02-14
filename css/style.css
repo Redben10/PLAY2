@@ -1,12 +1,24 @@
 /* Style Settings */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
 
 :root {
-    --primaryColor: #2E86AB;
-    --secondaryColor: #F8F9FA;
-    --accentColor: #F67280;
-    --font: 'Roboto', sans-serif;
+    --bgColor: #1C1C1C;
+    --accentColor: #E6E6E6;
+    --bgColorg: #000000;
+    --accentColorg: #d4af37;
+    --bgColors: #000000;
+    --accentColors: #a8a8a9;
+    --bgColorb: #000000;
+    --accentColorb: #cd7f32;
+    --font: 'Karla', sans-serif;
+    --firstName: 'John';
+    --lastName: 'Doe';
+    --buttonBgColor: #292929;
+    --buttonHoverColor: #00bb00;
+    --buttonBorderColor: #353535;
+    --buttonBoxShadowColor: rgba(0, 0, 0, 0.5);
+    --buttonTextColor: #fff;
 }
 
 html {
@@ -20,7 +32,7 @@ html {
 }
 
 .badge {
-    background-color: var(--accentColor);
+    background-color: BlueViolet;
     color: white;
     padding: 4px 8px;
     text-align: center;
@@ -28,10 +40,7 @@ html {
 }
 
 body {
-    background-color: var(--secondaryColor);
-    margin: 0;
-    padding: 0;
-    font-family: var(--font);
+    background-color: var(--bgColor);
 }
 
 #userPhoto {
@@ -43,31 +52,32 @@ body {
 }
 
 * {
-    box-sizing: border-box;
+    font-family: var(--font);
 }
 
 #userName {
-    color: var(--primaryColor);
-    font-size: 1.2rem;
+    color: #bbb;
+    font-size: 1rem;
     font-weight: 600;
-    line-height: 1.5;
+    line-height: 1.25;
     display: block;
+    font-family: var(--font);
     width: 100%;
     text-align: center;
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h5,
+p,
+h1,
+h2,
+h4,
+h6 {
     text-align: center;
     margin-bottom: 20px;
-    color: var(--primaryColor);
-    font-weight: 700;
-}
-
-p {
-    text-align: center;
-    margin-bottom: 20px;
-    color: var(--primaryColor);
+    color: #E6E6E6;
+    font-family: var(--font);
+    font-style: italic;
 }
 
 .atrib {
@@ -75,70 +85,153 @@ p {
     display: block;
     font-size: 12px;
     margin-bottom: 20px;
-    color: var(--primaryColor);
+    color: rgb(136, 136, 136);
+    font-family: var(--font);
     padding: 17px;
 }
 
 .games {
     display: flex;
-    flex-wrap: wrap;
+    width: 90%;
+    align-content: flex-start;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    position: absolute;
+    flex-wrap: wrap;
+    left: 50%;
+    transform: translate(-50%, 0%) !important;
 }
 
 .games a:not(.epci) {
-    text-decoration: none;
-    color: var(--primaryColor);
-    background-color: var(--accentColor);
+    scroll-margin-top: 2em;
+    outline: transparent;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    background: #292929;
+    margin: 5px;
     border-radius: 10px;
-    overflow: hidden;
+    justify-content: center;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding: 8px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
     position: relative;
-    transition: transform 0.3s ease;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.games a:not(.epci) b {
+    z-index: 5;
+}
+
+.active {
+    display: flex !important;
 }
 
 .games a:not(.epci) img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.games a:not(.epci):before {
+    content: "";
+    background: rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+.bar {
+    background: #000;
+    height: 0px;
+    width: 100%;
+    transition: 0.4s;
+    z-index: 4;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.games a:not(.epci):hover .bar {
+    height: 40px;
 }
 
 .games a:not(.epci):hover {
-    transform: translateY(-5px);
+    filter: brightness(95%);
+    translate: 0 1px;
+    box-shadow: none;
 }
 
 .game_title {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
 }
 
 .search {
-    width: calc(100% - 120px);
-    max-width: 300px;
+    width: 300px;
     height: 30px;
-    background: var(--accentColor);
-    border: none;
+    background: #292929;
+    border: 1px solid #353535;
     border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
     padding-left: 10px;
-    color: var(--secondaryColor);
-    margin-right: 10px;
+    transition: 0.2s;
 }
 
 .button {
     width: 100px;
-    height: 30px;
-    background: var(--primaryColor);
-    border: none;
-    border-radius: 5px;
-    color: var(--secondaryColor);
+    margin-left: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
-    margin-left: 10px;
+    height: 30px;
+    background: var(--buttonBgColor);
+    border: 1px solid var(--buttonBorderColor);
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px var(--buttonBoxShadowColor);
+    color: var(--buttonTextColor);
+    transition: 0.2s;
+    padding-right: 5px;
 }
 
-.button:hover {
-    background: #23596e;
+.button:hover,
+.button:focus {
+    filter: brightness(95%);
+    box-shadow: none;
+    outline: none;
+    border-color: var(--buttonHoverColor);
+}
+
+.search:focus {
+    filter: brightness(95%);
+    box-shadow: none;
+    outline: none;
+    border-color: var(--buttonHoverColor);
+}
+
+.games a:not(.epci) .badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 6;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.badge2p {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 6;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
